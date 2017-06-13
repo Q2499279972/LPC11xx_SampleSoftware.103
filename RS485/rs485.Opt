@@ -1,0 +1,78 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (RS485_Release), 0x0004 // Tools: 'ARM-ADS'
+Target (RS485_Debug), 0x0004 // Tools: 'ARM-ADS'
+GRPOPT 1,(Startup),1,0,0
+GRPOPT 2,(App),1,0,0
+
+OPTFFF 1,1,1,0,0,0,0,0,<..\Common\src\core_cm0.c><core_cm0.c> 
+OPTFFF 1,2,1,0,0,0,0,0,<..\Common\src\system_LPC11xx.c><system_LPC11xx.c> 
+OPTFFF 1,3,2,0,0,20,23,0,<..\Common\src\startup_LPC11xx.s><startup_LPC11xx.s> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,66,0,0,0,87,0,0,0,19,3,0,0,70,1,0,0 }
+OPTFFF 2,4,1,520093697,0,64,78,0,<.\rs485.c><rs485.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,35,0,0,0,8,0,0,0,244,2,0,0,48,1,0,0 }
+OPTFFF 2,5,1,2,0,30,42,0,<.\rs485test.c><rs485test.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,24,0,0,0,7,0,0,0,225,2,0,0,39,1,0,0 }
+
+ExtF <C:\Philips\nxpmcu\software\trunk\csps\lpc13xx\bsps\nxp_eval\examples\keil_examples\RS485\rs485.h> 9,13,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,49,1,0,0,26,0,0,0,189,3,0,0,70,1,0,0 }
+
+TARGOPT 1, (RS485_Release)
+ ADSCLK=12000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\Lst\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 255
+  OPTDL (SARMCM3.DLL)()(DARMCM1.DLL)()(SARMCM3.DLL)()(TARMCM1.DLL)()
+  OPTDBG 47614,1,()()()()()()()()()(.\FLASH.ini) (BIN\UL2CM3.DLL)()()()
+  OPTKEY 0,(DLGUARM)((105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0))
+  OPTKEY 0,(DLGARARM)((6000=505,385,1095,785,0))
+  OPTKEY 0,(DLGTARM)((1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=626,394,992,623,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(UL2CM3)(-UV0887A9E -O462 -S0 -C0 -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD10000000 -FC800 -FN1 -FF0LPC_V0_IAP_32 -FS00 -FL08000)
+  OPTBB 0,0,54,1,848,0,0,0,0,1,<rs485.c>()()
+  OPTBB 1,0,42,1,644,0,0,0,0,1,<rs485test.c>()()
+  OPTWA 0,1,(UARTBuffer)
+  OPTMM 1,1,(0x40024044)
+  OPTMM 2,2,(0xe000c000)
+  OPTMM 3,1,(0x7fe0170)
+  OPTDF 0x84
+  OPTLE <>
+  OPTLC <>
+EndOpt
+
+TARGOPT 2, (RS485_Debug)
+ ADSCLK=12000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\Lst\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,0
+  OPTAX 255
+  OPTDL (SARMCM3.DLL)()(DARMCM1.DLL)()(SARMCM3.DLL)()(TARMCM1.DLL)()
+  OPTDBG 47614,5,()()()()()()()()()(.\RAM.ini) (BIN\UL2CM3.DLL)()()()
+  OPTKEY 0,(DLGUARM)((105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0))
+  OPTKEY 0,(DLGARARM)((6000=505,385,1095,785,0))
+  OPTKEY 0,(DLGTARM)((1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=626,394,992,623,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(UL2CM3)(-UV0887A9E -O462 -S0 -C0 -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD10000000 -FC800 -FN0)
+  OPTMM 1,1,(0x40024044)
+  OPTMM 2,2,(0xe000c000)
+  OPTMM 3,1,(0x7fe0170)
+  OPTDF 0x84
+  OPTLE <>
+  OPTLC <>
+EndOpt
+

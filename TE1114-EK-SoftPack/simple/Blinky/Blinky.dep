@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>389161860</fileChecksum>
+  <configuration>
+    <name>Flash Debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>RAM Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\Common\src\cstartup_M.s</file>
+      <file>$PROJ_DIR$\..\Common\src\core_cm0.c</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\blinky.o</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\Common\inc\system_LPC11xx.h</file>
+      <file>$TOOLKIT_DIR$\inc\stdint.h</file>
+      <file>$PROJ_DIR$\..\Common\inc\timer32.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\core_cm0.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\blinky.pbi</file>
+      <file>$PROJ_DIR$\..\Common\src\system_LPC11xx.c</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\core_cm0.o</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\gpio.pbi</file>
+      <file>$PROJ_DIR$\RAM Debug\Exe\Blinky.out</file>
+      <file>$PROJ_DIR$\..\Common\inc\uart.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl6M_tl_in.a</file>
+      <file>$PROJ_DIR$\..\Common\inc\clkconfig.h</file>
+      <file>$PROJ_DIR$\..\Common\inc\timer16.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\system_LPC11xx.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\timer32.pbi</file>
+      <file>$PROJ_DIR$\..\Common\inc\gpio.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\uart.o</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\timer32.o</file>
+      <file>$PROJ_DIR$\..\Common\inc\LPC11xx.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\Blinky.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\timer16.pbi</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\timer16.o</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\system_LPC11xx.o</file>
+      <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\cstartup_M.o</file>
+      <file>$PROJ_DIR$\..\Common\icf\LPC1114_Ram.icf</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\clkconfig.o</file>
+      <file>$TOOLKIT_DIR$\inc\ycheck.h</file>
+      <file>$PROJ_DIR$\..\Common\inc\core_cm0.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\clkconfig.pbi</file>
+      <file>$PROJ_DIR$\..\Common\src\gpio.c</file>
+      <file>$PROJ_DIR$\..\Common\src\clkconfig.c</file>
+      <file>$PROJ_DIR$\..\Common\src\timer16.c</file>
+      <file>$PROJ_DIR$\..\Common\src\timer32.c</file>
+      <file>$PROJ_DIR$\..\Common\src\uart.c</file>
+      <file>$PROJ_DIR$\blinky.c</file>
+      <file>$PROJ_DIR$\..\readme.txt</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\gpio.o</file>
+      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\cstartup_M.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\core_cm0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 38 29 19 3 8 34 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 38 29 19 8 34 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\system_LPC11xx.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 38 29 19 3 8 34 30 27 39 18 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 38 29 19 8 34 30 27 39 18 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RAM Debug\Exe\Blinky.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 36 2 37 11 35 48 33 32 26 25 22 49 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RAM Debug\Obj\Blinky.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 9 40 7 12 21 31 23 20</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 39 5 38 29 19 3 8 34 30 18 4 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 39 5 38 29 19 8 34 30 18 4 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\clkconfig.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 39 5 38 29 19 3 8 34 30 18 4 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 39 5 38 29 19 8 34 30 18 4 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\timer16.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 39 5 38 29 19 3 8 34 30 18 4 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 39 5 38 29 19 8 34 30 18 4 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\timer32.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 39 5 38 29 19 3 8 34 30 18 4 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 39 5 38 29 19 8 34 30 18 4 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 39 5 38 29 19 3 8 34 30 18 4 14</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 39 5 38 29 19 8 34 30 18 4 14</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\blinky.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 2</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 39 5 38 29 19 3 8 34 30 18 4 17 16 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 39 5 38 29 19 8 34 30 18 4 17 16 24</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

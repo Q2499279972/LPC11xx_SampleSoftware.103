@@ -1,0 +1,324 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V5.50.0.51878/W32 for ARM              14/Mar/2011  14:30:04 #
+# Copyright (C) 2007-2010 IAR Systems AB.                                     #
+#                                                                             #
+#    Output file  =  D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-Soft #
+#                    Pack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\Flash       #
+#                    Debug\Exe\GettingStarted.out.tmp                         #
+#    Map file     =  D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-Soft #
+#                    Pack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\Flash       #
+#                    Debug\List\GettingStarted.map                            #
+#    Command line =  "D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-Sof #
+#                    tPack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\Flash      #
+#                    Debug\Obj\cstartup_M.o" "D:\WORK\NXP\TE1100_11C14_1343-E #
+#                    K\SOFTWARE\TE1114-EK-SoftPack\IAR-LPC-1114-EK(TENGHUA)\G #
+#                    ettingStarted\Flash Debug\Obj\main.o"                    #
+#                    "D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-Sof #
+#                    tPack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\Flash      #
+#                    Debug\Obj\ntc.o" "D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTW #
+#                    ARE\TE1114-EK-SoftPack\IAR-LPC-1114-EK(TENGHUA)\GettingS #
+#                    tarted\Flash Debug\Obj\temperature.o" --redirect         #
+#                    _Printf=_PrintfTiny --redirect _Scanf=_ScanfSmall -o     #
+#                    "D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-Sof #
+#                    tPack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\Flash      #
+#                    Debug\Exe\GettingStarted.out.tmp" --map                  #
+#                    "D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-Sof #
+#                    tPack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\Flash      #
+#                    Debug\List\GettingStarted.map" --config                  #
+#                    "D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-Sof #
+#                    tPack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\config\LPC #
+#                    1114_Flash.icf" --semihosting --entry                    #
+#                    __iar_program_start                                      #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"A2":  place at start of [0x00000124-0x00007fff] { ro };
+"P1":  place in [from 0x10000000 to 0x10001fff] {
+          rw, block CSTACK, block HEAP };
+
+  Section          Kind        Address   Size  Object
+  -------          ----        -------   ----  ------
+"A1":                                    0xc0
+  .intvec          ro code  0x00000000   0xc0  cstartup_M.o [1]
+                          - 0x000000c0   0xc0
+
+"A2":                                   0xa66
+  .iar.init_table  const    0x00000124   0x10  - Linker created -
+  .rodata          const    0x00000134   0xb0  main.o [1]
+  .rodata          const    0x000001e4   0x70  main.o [1]
+  .rodata          const    0x00000254   0x30  xreportassert.o [3]
+  .text            ro code  0x00000284    0x2  cstartup_M.o [1]
+  .text            ro code  0x00000288  0x578  main.o [1]
+  .text            ro code  0x00000800    0xc  cstartup_M.o [4]
+  .text            ro code  0x0000080c   0x54  xassert.o [3]
+  .text            ro code  0x00000860   0x54  I32DivMod.o [4]
+  .text            ro code  0x000008b4   0x20  printf.o [3]
+  .text            ro code  0x000008d4   0x16  cmain.o [4]
+  .text            ro code  0x000008ec   0x6c  xreportassert.o [3]
+  .text            ro code  0x00000958    0x8  abort.o [3]
+  .text            ro code  0x00000960    0x2  IntDivZer.o [4]
+  .text            ro code  0x00000962  0x15c  xprintftiny.o [3]
+  .text            ro code  0x00000abe   0x16  xprout.o [3]
+  .text            ro code  0x00000ad4   0x2c  data_init3.o [4]
+  .text            ro code  0x00000b00    0x4  low_level_init.o [3]
+  .text            ro code  0x00000b04    0x6  exit.o [3]
+  .text            ro code  0x00000b0a   0x26  putchar.o [3]
+  .text            ro code  0x00000b30   0x14  exit.o [5]
+  .text            ro code  0x00000b44   0x14  strlen.o [4]
+  .text            ro code  0x00000b58    0xa  cexit.o [4]
+  .text            ro code  0x00000b62   0x28  zero_init3.o [4]
+                          - 0x00000b8a  0xa66
+
+"P1", part 1 of 2:                      0x800
+  CSTACK                    0x10000000  0x800  <Block>
+    CSTACK         uninit   0x10000000  0x800  <Block tail>
+                          - 0x10000800  0x800
+
+"P1", part 2 of 2:                        0x4
+  .bss             zero     0x10000800    0x4  main.o [1]
+                          - 0x10000804    0x4
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x4:
+          0x10000800   0x4
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-SoftPack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\Flash Debug\Obj: [1]
+    cstartup_M.o          194
+    main.o              1 400      288        4
+    -------------------------------------------
+    Total:              1 594      288        4
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl6M_tl_in.a: [3]
+    abort.o                 8
+    exit.o                  6
+    low_level_init.o        4
+    printf.o               32
+    putchar.o              38
+    xassert.o              84
+    xprintftiny.o         348
+    xprout.o               22
+    xreportassert.o       108       48
+    -------------------------------------------
+    Total:                650       48
+
+rt6M_tl.a: [4]
+    I32DivMod.o            84
+    IntDivZer.o             2
+    cexit.o                10
+    cmain.o                22
+    cstartup_M.o           12
+    data_init3.o           44
+    strlen.o               20
+    zero_init3.o           40
+    -------------------------------------------
+    Total:                234
+
+shb_l.a: [5]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    4
+    Linker created                  16    2 048
+-----------------------------------------------
+    Grand Total:        2 502      352    2 052
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+ADC_IRQHandler          0x00000285         Code  Wk  cstartup_M.o [1]
+ADC_Init                0x000005ad   0x70  Code  Gb  main.o [1]
+BOD_IRQHandler          0x00000285         Code  Wk  cstartup_M.o [1]
+BusFault_Handler        0x00000285         Code  Wk  cstartup_M.o [1]
+CSTACK$$Base            0x10000000          --   Gb  - Linker created -
+CSTACK$$Limit           0x10000800          --   Gb  - Linker created -
+CT16B0_IRQHandler       0x00000285         Code  Wk  cstartup_M.o [1]
+CT16B1_IRQHandler       0x00000285         Code  Wk  cstartup_M.o [1]
+CT32B0_IRQHandler       0x000004fb   0x1c  Code  Gb  main.o [1]
+CT32B0_Init             0x0000051d   0x7c  Code  Gb  main.o [1]
+CT32B1_IRQHandler       0x00000285         Code  Wk  cstartup_M.o [1]
+DebugMon_Handler        0x00000285         Code  Wk  cstartup_M.o [1]
+Dly100us                0x00000471   0x20  Code  Gb  main.o [1]
+GpioInit                0x00000495   0x66  Code  Gb  main.o [1]
+HardFault_Handler       0x00000285         Code  Wk  cstartup_M.o [1]
+I2C0_IRQHandler         0x00000285         Code  Wk  cstartup_M.o [1]
+InitClock               0x0000030b   0x82  Code  Gb  main.o [1]
+MemManage_Handler       0x00000285         Code  Wk  cstartup_M.o [1]
+NMI_Handler             0x00000285         Code  Wk  cstartup_M.o [1]
+NVIC_ClrPend            0x000002b7   0x2e  Code  Gb  main.o [1]
+NVIC_IntEnable          0x00000289   0x2e  Code  Gb  main.o [1]
+NVIC_IntPri             0x000002e5   0x26  Code  Gb  main.o [1]
+PIO0_IRQHandler         0x00000285         Code  Wk  cstartup_M.o [1]
+PIO1_IRQHandler         0x00000285         Code  Wk  cstartup_M.o [1]
+PIO2_IRQHandler         0x00000285         Code  Wk  cstartup_M.o [1]
+PIO3_IRQHandler         0x00000285         Code  Wk  cstartup_M.o [1]
+PendSV_Handler          0x00000285         Code  Wk  cstartup_M.o [1]
+Region$$Table$$Base     0x00000124          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00000134          --   Gb  - Linker created -
+SSP0_IRQHandler         0x00000285         Code  Wk  cstartup_M.o [1]
+SSP1_IRQHandler         0x00000285         Code  Wk  cstartup_M.o [1]
+SVC_Handler             0x00000285         Code  Wk  cstartup_M.o [1]
+SYS_GetMainClk          0x0000038d   0x42  Code  Gb  main.o [1]
+SysTick_Handler         0x00000285         Code  Wk  cstartup_M.o [1]
+TMR32B0MR0              0x40014018    0x4  Data  Wk  main.o [1]
+TMR32B0PR               0x4001400c    0x4  Data  Wk  main.o [1]
+Ticks                   0x10000800    0x4  Data  Gb  main.o [1]
+U0RBRTHR                0x40008000    0x1  Data  Wk  main.o [1]
+UART0_IRQHandler        0x00000285         Code  Wk  cstartup_M.o [1]
+UART_Init               0x000003cf   0x82  Code  Gb  main.o [1]
+UsageFault_Handler      0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP0_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP10_IRQHandler    0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP11_IRQHandler    0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP12_IRQHandler    0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP1_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP2_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP3_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP4_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP5_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP6_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP7_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP8_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WAKE_UP9_IRQHandler     0x00000285         Code  Wk  cstartup_M.o [1]
+WDT_IRQHandler          0x00000285         Code  Wk  cstartup_M.o [1]
+_A_AD0CR                0x4001c000    0x4  Data  Wk  main.o [1]
+_A_AD0DR0               0x4001c010    0x4  Data  Wk  main.o [1]
+_A_AD0INTEN             0x4001c00c    0x4  Data  Wk  main.o [1]
+_A_CLRPEND0             0xe000e280    0x4  Data  Wk  main.o [1]
+_A_GPIO0DIR             0x50008000    0x4  Data  Wk  main.o [1]
+_A_GPIO1DIR             0x50018000    0x4  Data  Wk  main.o [1]
+_A_GPIO2DIR             0x50028000    0x4  Data  Wk  main.o [1]
+_A_GPIO3DIR             0x50038000    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO0_1         0x40044010    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO0_2         0x4004401c    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO0_3         0x4004402c    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO0_4         0x40044030    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO0_5         0x40044034    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO0_6         0x4004404c    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO0_7         0x40044050    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO0_8         0x40044060    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO1_10        0x4004406c    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO1_11        0x40044098    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO1_4         0x40044094    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO1_5         0x400440a0    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO1_6         0x400440a4    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO1_7         0x400440a8    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO1_8         0x40044014    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO1_9         0x40044038    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_0         0x40044008    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_1         0x40044028    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_10        0x40044058    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_11        0x40044070    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_2         0x4004405c    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_3         0x4004408c    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_4         0x40044040    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_5         0x40044044    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_6         0x40044000    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_7         0x40044020    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_8         0x40044024    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO2_9         0x40044054    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO3_0         0x40044084    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO3_1         0x40044088    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO3_2         0x4004409c    0x4  Data  Wk  main.o [1]
+_A_IOCON_PIO3_3         0x400440ac    0x4  Data  Wk  main.o [1]
+_A_IOCON_RESET_PIO0_0   0x4004400c    0x4  Data  Wk  main.o [1]
+_A_IOCON_R_PIO0_11      0x40044074    0x4  Data  Wk  main.o [1]
+_A_IOCON_R_PIO1_0       0x40044078    0x4  Data  Wk  main.o [1]
+_A_IOCON_R_PIO1_1       0x4004407c    0x4  Data  Wk  main.o [1]
+_A_IOCON_R_PIO1_2       0x40044080    0x4  Data  Wk  main.o [1]
+_A_IOCON_SWCLK_PIO0_10  0x40044068    0x4  Data  Wk  main.o [1]
+_A_IOCON_SWDIO_PIO1_3   0x40044090    0x4  Data  Wk  main.o [1]
+_A_IP0                  0xe000e400    0x4  Data  Wk  main.o [1]
+_A_MAINCLKSEL           0x40048070    0x4  Data  Wk  main.o [1]
+_A_MAINCLKUEN           0x40048074    0x4  Data  Wk  main.o [1]
+_A_PDRUNCFG             0x40048238    0x4  Data  Wk  main.o [1]
+_A_SETENA0              0xe000e100    0x4  Data  Wk  main.o [1]
+_A_SYSAHBCLKCTRL        0x40048080    0x4  Data  Wk  main.o [1]
+_A_SYSAHBCLKDIV         0x40048078    0x4  Data  Wk  main.o [1]
+_A_SYSOSCCLTRL          0x40048020    0x4  Data  Wk  main.o [1]
+_A_SYSPLLCLKSEL         0x40048040    0x4  Data  Wk  main.o [1]
+_A_SYSPLLCLKUEN         0x40048044    0x4  Data  Wk  main.o [1]
+_A_SYSPLLCTRL           0x40048008    0x4  Data  Wk  main.o [1]
+_A_SYSPLLSTAT           0x4004800c    0x4  Data  Wk  main.o [1]
+_A_TMR32B0CTCR          0x40014070    0x4  Data  Wk  main.o [1]
+_A_TMR32B0IR            0x40014000    0x4  Data  Wk  main.o [1]
+_A_TMR32B0MCR           0x40014014    0x4  Data  Wk  main.o [1]
+_A_TMR32B0TCR           0x40014004    0x4  Data  Wk  main.o [1]
+_A_U0FCR                0x40008008    0x4  Data  Wk  main.o [1]
+_A_U0IER                0x40008004    0x4  Data  Wk  main.o [1]
+_A_U0LCR                0x4000800c    0x4  Data  Wk  main.o [1]
+_A_U0LSR                0x40008014    0x4  Data  Wk  main.o [1]
+_A_U0TER                0x40008030    0x4  Data  Wk  main.o [1]
+_A_UARTCLKDIV           0x40048098    0x4  Data  Wk  main.o [1]
+_PrintfTiny             0x00000963  0x15c  Code  Gb  xprintftiny.o [3]
+_Prout                  0x00000abf   0x16  Code  Gb  xprout.o [3]
+__aeabi_assert          0x0000080f   0x52  Code  Gb  xassert.o [3]
+__aeabi_idiv            0x00000861         Code  Gb  I32DivMod.o [4]
+__aeabi_idiv0           0x00000961         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod         0x00000861         Code  Gb  I32DivMod.o [4]
+__aeabi_uidiv           0x0000086d         Code  Gb  I32DivMod.o [4]
+__aeabi_uidivmod        0x0000086d         Code  Gb  I32DivMod.o [4]
+__cmain                 0x000008d5         Code  Gb  cmain.o [4]
+__exit                  0x00000b31   0x14  Code  Gb  exit.o [5]
+__iar_EmptyStepPoint    0x0000080d    0x2  Code  Gb  xassert.o [3]
+__iar_ReportAssert      0x00000901   0x4c  Code  Gb  xreportassert.o [3]
+__iar_data_init3        0x00000ad5   0x2c  Code  Gb  data_init3.o [4]
+__iar_program_start     0x00000801         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x00000b63   0x28  Code  Gb  zero_init3.o [4]
+__low_level_init        0x00000b01    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000         Data  Gb  cstartup_M.o [1]
+__vector_table_0x1c     0x0000001c         Data  Gb  cstartup_M.o [1]
+__write                 0x00000451   0x20  Code  Gb  main.o [1]
+_call_main              0x000008e1         Code  Gb  cmain.o [4]
+_exit                   0x00000b59         Code  Gb  cexit.o [4]
+_main                   0x000008e7         Code  Gb  cmain.o [4]
+abort                   0x00000959    0x8  Code  Gb  abort.o [3]
+exit                    0x00000b05    0x6  Code  Gb  exit.o [3]
+main                    0x00000649  0x142  Code  Gb  main.o [1]
+out                     0x000008ed   0x14  Code  Lc  xreportassert.o [3]
+printf                  0x000008b5   0x20  Code  Gb  printf.o [3]
+putchar                 0x00000b0b   0x26  Code  Gb  putchar.o [3]
+strlen                  0x00000b45   0x14  Code  Gb  strlen.o [4]
+
+
+[1] = D:\WORK\NXP\TE1100_11C14_1343-EK\SOFTWARE\TE1114-EK-SoftPack\IAR-LPC-1114-EK(TENGHUA)\GettingStarted\Flash Debug\Obj
+[2] = command line
+[3] = dl6M_tl_in.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  2 502 bytes of readonly  code memory
+    352 bytes of readonly  data memory
+  2 052 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

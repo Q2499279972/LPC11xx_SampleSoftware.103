@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1092285764</fileChecksum>
+  <configuration>
+    <name>Flash Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\modules\drv_hd44780.h</file>
+      <file>$PROJ_DIR$\cstartup_M.s</file>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+      <file>$PROJ_DIR$\modules\temperature.c</file>
+      <file>$PROJ_DIR$\Flash Debug\Exe\GettingStarted.hex</file>
+      <file>$TOOLKIT_DIR$\inc\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\cstartup_M.o</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_hd44780_l.o</file>
+      <file>$PROJ_DIR$\modules\drv_hd44780_cnfg.h</file>
+      <file>$TOOLKIT_DIR$\inc\stdbool.h</file>
+      <file>$PROJ_DIR$\modules\temperature.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc1113.h</file>
+      <file>$PROJ_DIR$\board\board.h</file>
+      <file>$PROJ_DIR$\Flash Debug\List\GettingStarted.map</file>
+      <file>$PROJ_DIR$\board\arm_comm.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_hd44780.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\GettingStarted.pbd</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_hd44780.o</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\temperature.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc1114.h</file>
+      <file>$TOOLKIT_DIR$\inc\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\xtls.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\readme.txt</file>
+      <file>$TOOLKIT_DIR$\inc\xlocale_c.h</file>
+      <file>$PROJ_DIR$\includes.h</file>
+      <file>$TOOLKIT_DIR$\inc\xmtx.h</file>
+      <file>$PROJ_DIR$\modules\drv_hd44780_l.h</file>
+      <file>$TOOLKIT_DIR$\inc\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\xlocaleuse.h</file>
+      <file>$TOOLKIT_DIR$\inc\wchar.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\modules\ntc.h</file>
+      <file>$TOOLKIT_DIR$\inc\yfuns.h</file>
+      <file>$TOOLKIT_DIR$\inc\limits.h</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\temperature.o</file>
+      <file>$TOOLKIT_DIR$\inc\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\modules\drv_hd44780.c</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\ntc.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\ntc.o</file>
+      <file>$TOOLKIT_DIR$\inc\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\ymath.h</file>
+      <file>$TOOLKIT_DIR$\inc\yvals.h</file>
+      <file>$PROJ_DIR$\modules\drv_hd44780_l.c</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Obj\drv_hd44780_l.pbi</file>
+      <file>$PROJ_DIR$\Flash Debug\Exe\GettingStarted.out</file>
+      <file>$PROJ_DIR$\config\LPC1114_Flash.icf</file>
+      <file>$PROJ_DIR$\modules\ntc.c</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\ctype.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl6M_tl_in.a</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 57 19</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\cstartup_M.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\temperature.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12 34 51 5 53 29 60 14 26 46 15 28 13 61 37 30 35 16 38 33 39 11 43 8 50 27 17 2 45 52 20 18 0 10 36 41</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 34 51 5 53 29 14 26 46 15 28 13 61 37 30 35 16 38 33 39 11 43 8 50 27 17 2 45 52 20 18 0 10 36 41</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Flash Debug\Obj\GettingStarted.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 55 48 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34 51 5 53 29 60 14 26 46 15 28 13 61 37 30 35 16 38 33 39 11 43 8 50 27 17 2 45 52 20 18 0 10 36 41 12 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34 51 5 53 29 14 26 46 15 28 13 61 37 30 35 16 38 33 39 11 43 8 50 27 17 2 45 52 20 18 0 10 36 41 12 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_hd44780.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 0 34 51 5 53 29 60 14 26 46 15 28 13 61 37 30 35 16 38 33 39 11 43 8 50 27 17 2 45 52 20 18 10 36 41 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0 34 51 5 53 29 14 26 46 15 28 13 61 37 30 35 16 38 33 39 11 43 8 50 27 17 2 45 52 20 18 10 36 41 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\drv_hd44780_l.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36 34 51 5 53 29 60 14 26 46 15 28 13 61 37 30 35 16 38 33 39 11 43 8 50 27 17 2 45 52 20 18 0 10 41 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36 34 51 5 53 29 14 26 46 15 28 13 61 37 30 35 16 38 33 39 11 43 8 50 27 17 2 45 52 20 18 0 10 41 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Flash Debug\Exe\GettingStarted.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 58 7 40 49 44 25 6 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\modules\ntc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 45 5 52 53 29 60 14 26 46 20 8</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 45 5 52 53 29 14 26 46 20 8</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

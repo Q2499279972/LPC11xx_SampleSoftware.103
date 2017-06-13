@@ -1,0 +1,23 @@
+*** Creating Trace Output File '.\Obj\gpiotest.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\gpiotest.o"'
+### List of Objects: adding '".\obj\core_cm0.o"'
+### List of Objects: adding '".\obj\system_lpc11xx.o"'
+### List of Objects: adding '".\obj\startup_lpc11xx.o"'
+### List of Objects: adding '".\obj\gpio.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 ".\obj\gpiotest.o" ".\obj\core_cm0.o" ".\obj\system_lpc11xx.o" ".\obj\startup_lpc11xx.o" ".\obj\gpio.o" --library_type=microlib --strict --scatter ".\Obj\gpiotest.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\gpiotest.map" -o ".\Obj\gpiotest.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\gpiotest.axf'
+### ADS-LD Command File: '.\Obj\gpiotest.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\gpiotest.lnp', Handle=0x000006F8
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\gpiotest.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

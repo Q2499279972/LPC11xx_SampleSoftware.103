@@ -1,0 +1,4 @@
+--cpu Cortex-M0 ".\obj\pmu.o" ".\obj\pmutest.o" ".\obj\core_cm0.o" ".\obj\system_lpc11xx.o" ".\obj\startup_lpc11xx.o" ".\obj\gpio.o" ".\obj\timer16.o" --library_type=microlib --strict --scatter ".\Obj\pmutest.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\pmutest.map" -o ".\Obj\pmutest.axf"

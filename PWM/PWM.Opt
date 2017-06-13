@@ -1,0 +1,79 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (GPIO_Debug), 0x0004 // Tools: 'ARM-ADS'
+Target (GPIO_Release), 0x0004 // Tools: 'ARM-ADS'
+GRPOPT 1,(Source),1,0,0
+GRPOPT 2,(Startup),1,0,0
+GRPOPT 3,(Common),1,0,0
+
+OPTFFF 1,1,1,402653185,0,14,28,0,<.\gpiotest.c><gpiotest.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,4,1,0,0,60,0,0,0,189,3,0,0,120,1,0,0 }
+OPTFFF 2,2,1,0,0,0,0,0,<..\Common\src\core_cm0.c><core_cm0.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,228,0,0,0,13,0,0,0,247,3,0,0,60,1,0,0 }
+OPTFFF 2,3,1,335544320,0,0,0,0,<..\Common\src\system_LPC11xx.c><system_LPC11xx.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,209,0,0,0,9,0,0,0,239,3,0,0,56,1,0,0 }
+OPTFFF 2,4,2,0,0,114,121,0,<..\Common\src\startup_LPC11xx.s><startup_LPC11xx.s> 
+OPTFFF 3,5,1,1,0,28,36,0,<..\Common\src\gpio.c><gpio.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,18,1,0,0,36,0,0,0,241,3,0,0,94,1,0,0 }
+
+ExtF <C:\mcu\lpclib\lpc11xx\bsps\nxp_eval\examples\keil_examples\Common\inc\LPC11xx.h> 254,254,0,{ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+
+TARGOPT 1, (GPIO_Debug)
+ ADSCLK=12000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\Lst\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,0
+  OPTAX 255
+  OPTDL (SARMCM3.DLL)()(DARMCM1.DLL)()(SARMCM3.DLL)()(TARMCM1.DLL)()
+  OPTDBG 47614,1,()()()()()()()()()(.\RAM.ini) (BIN\UL2CM3.DLL)()()()
+  OPTKEY 0,(DLGUARM)((105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0))
+  OPTKEY 0,(DLGARARM)((6000=505,385,1095,785,0))
+  OPTKEY 0,(DLGTARM)((1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=626,394,992,623,0)(1009=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(UL2CM3)(-UV0887A9E -O462 -S0 -C0 -N00("ARM CoreSight SW-DP") -D00(0BB11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD10000000 -FC800 -FN0)
+  OPTBB 0,0,39,1,268438712,0,0,0,0,1,<gpio.c>()()
+  OPTBB 1,0,62,1,268438756,0,0,0,0,1,<gpio.c>()()
+  OPTBB 2,0,85,1,268438800,0,0,0,0,1,<gpio.c>()()
+  OPTWA 0,1,(gpio0_counter)
+  OPTMM 1,1,(0x50008000)
+  OPTDF 0x80
+  OPTLE <>
+  OPTLC <>
+EndOpt
+
+TARGOPT 2, (GPIO_Release)
+ ADSCLK=12000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\Lst\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 255
+  OPTDL (SARMCM3.DLL)()(DARMCM1.DLL)()(SARMCM3.DLL)()(TARMCM1.DLL)()
+  OPTDBG 47614,1,()()()()()()()()()(.\FLASH.ini) (BIN\UL2CM3.DLL)()()()
+  OPTKEY 0,(DLGUARM)((105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0))
+  OPTKEY 0,(DLGARARM)((6000=505,385,1095,785,0))
+  OPTKEY 0,(DLGTARM)((1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=626,394,992,623,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(UL2CM3)(-UV0887A9E -O462 -S0 -C0 -N00("ARM CoreSight SW-DP") -D00(0BB11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD10000000 -FC800 -FN1 -FF0LPC_V0_IAP_32 -FS00 -FL08000)
+  OPTBB 0,0,36,1,980,0,0,0,0,1,<gpio.c>()()
+  OPTWA 0,1,(gpio0_counter)
+  OPTMM 1,1,(0x50008000)
+  OPTMM 2,2,(0xe000c000)
+  OPTDF 0x84
+  OPTLE <>
+  OPTLC <>
+EndOpt
+

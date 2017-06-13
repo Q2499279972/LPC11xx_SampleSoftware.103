@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3417223881</fileChecksum>
+  <configuration>
+    <name>Flash Debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>RAM Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\Common\src\cstartup_M.s</file>
+      <file>$PROJ_DIR$\..\Common\src\core_cm0.c</file>
+      <file>$PROJ_DIR$\..\Common\icf\LPC1114_Ram.icf</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\GPIO.pbd</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\core_cm0.o</file>
+      <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\timer16.pbi</file>
+      <file>$PROJ_DIR$\RAM Debug\Exe\GPIO.out</file>
+      <file>$PROJ_DIR$\RAM Debug\List\GPIO.map</file>
+      <file>$PROJ_DIR$\..\Common\src\system_LPC11xx.c</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\gpiotest.o</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\gpio.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\clkconfig.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\..\Common\inc\uart.h</file>
+      <file>$PROJ_DIR$\..\Common\inc\timer16.h</file>
+      <file>$PROJ_DIR$\..\Common\inc\system_LPC11xx.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\system_LPC11xx.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\..\Common\inc\timer32.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\clkconfig.o</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\cstartup_M.o</file>
+      <file>$TOOLKIT_DIR$\lib\dl6M_tl_in.a</file>
+      <file>$PROJ_DIR$\..\Common\inc\core_cm0.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\gpiotest.pbi</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\timer32.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\stdint.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\core_cm0.pbi</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\timer16.o</file>
+      <file>$TOOLKIT_DIR$\inc\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\yvals.h</file>
+      <file>$PROJ_DIR$\..\Common\inc\gpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\timer32.o</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\uart.o</file>
+      <file>$PROJ_DIR$\..\Common\inc\LPC11xx.h</file>
+      <file>$PROJ_DIR$\RAM Debug\Obj\system_LPC11xx.o</file>
+      <file>$PROJ_DIR$\..\Common\src\timer16.c</file>
+      <file>$PROJ_DIR$\..\Common\src\timer32.c</file>
+      <file>$PROJ_DIR$\..\Common\src\uart.c</file>
+      <file>$TOOLKIT_DIR$\inc\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\Common\src\gpio.c</file>
+      <file>$PROJ_DIR$\..\Common\src\clkconfig.c</file>
+      <file>$PROJ_DIR$\gpiotest.c</file>
+      <file>$PROJ_DIR$\..\readme.txt</file>
+      <file>$PROJ_DIR$\..\Common\inc\clkconfig.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\cstartup_M.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\core_cm0.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31 34 35 21 45 20 13 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31 34 35 21 20 13 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 8 9</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RAM Debug\Obj\GPIO.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 14 32 12 29 22 7 30 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RAM Debug\Exe\GPIO.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 2 25 4 26 6 11 41 33 38 39 23 5 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\system_LPC11xx.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31 34 35 21 45 20 13 37 40 28 15 19</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31 34 35 21 20 13 37 40 28 15 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\timer16.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40 28 31 34 35 21 45 20 13 37 15 19 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 28 31 34 35 21 20 13 37 15 19 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\timer32.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40 28 31 34 35 21 45 20 13 37 15 19 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 28 31 34 35 21 20 13 37 15 19 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40 28 31 34 35 21 45 20 13 37 15 19 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 28 31 34 35 21 20 13 37 15 19 17</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40 28 31 34 35 21 45 20 13 37 15 19 36</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 28 31 34 35 21 20 13 37 15 19 36</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Common\src\clkconfig.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40 28 31 34 35 21 45 20 13 37 15 19 50</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 28 31 34 35 21 20 13 37 15 19 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\gpiotest.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 28 31 34 35 21 20 13 37 15 19 36</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

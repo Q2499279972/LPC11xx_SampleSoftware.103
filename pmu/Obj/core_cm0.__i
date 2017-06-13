@@ -1,0 +1,1 @@
+-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I. -I..\Common\inc -I "E:\Keil\ARM\CMSIS\Include" -I "E:\Keil\ARM\INC\?NXP" -D__DEBUG_FLASH -o ".\Obj\core_cm0.o" --omf_browse ".\Obj\core_cm0.crf" --depend ".\Obj\core_cm0.d" "..\Common\src\core_cm0.c"

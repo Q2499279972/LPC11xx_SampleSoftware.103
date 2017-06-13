@@ -1,0 +1,1 @@
+--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "E:\Keil\ARM\CMSIS\Include" -I "E:\Keil\ARM\INC\?NXP" --list ".\Lst\startup_LPC11xx.lst" --xref -o ".\Obj\startup_LPC11xx.o" --depend ".\Obj\startup_LPC11xx.d" "..\Common\src\startup_LPC11xx.s"

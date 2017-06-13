@@ -1,0 +1,25 @@
+*** Creating Trace Output File '.\Obj\pmutest.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\pmu.o"'
+### List of Objects: adding '".\obj\pmutest.o"'
+### List of Objects: adding '".\obj\core_cm0.o"'
+### List of Objects: adding '".\obj\system_lpc11xx.o"'
+### List of Objects: adding '".\obj\startup_lpc11xx.o"'
+### List of Objects: adding '".\obj\gpio.o"'
+### List of Objects: adding '".\obj\timer16.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 ".\obj\pmu.o" ".\obj\pmutest.o" ".\obj\core_cm0.o" ".\obj\system_lpc11xx.o" ".\obj\startup_lpc11xx.o" ".\obj\gpio.o" ".\obj\timer16.o" --library_type=microlib --strict --scatter ".\Obj\pmutest.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\pmutest.map" -o ".\Obj\pmutest.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\pmutest.axf'
+### ADS-LD Command File: '.\Obj\pmutest.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\pmutest.lnp', Handle=0x000003BC
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\pmutest.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
